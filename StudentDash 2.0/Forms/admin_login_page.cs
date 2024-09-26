@@ -38,5 +38,12 @@ namespace StudentDash_2._0.Forms
         {
             login_btn.ForeColor = Color.White;
         }
+
+        private void login_btn_Click(object sender, EventArgs e)
+        {
+            admin_home_page ahp = new admin_home_page();
+            ahp.Show();
+            this.Visible = false;
+        }
     }
 }

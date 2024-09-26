@@ -63,6 +63,26 @@ namespace StudentDash_2._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12g {
+            get {
+                object obj = ResourceManager.GetObject("12g", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2bdf9038_62f0_4d1e_b329_fc4ef2b6ef861_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("2bdf9038-62f0-4d1e-b329-fc4ef2b6ef861-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3 {
             get {
                 object obj = ResourceManager.GetObject("3", resourceCulture);
@@ -83,6 +103,16 @@ namespace StudentDash_2._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8 {
+            get {
+                object obj = ResourceManager.GetObject("8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_5359553_640 {
             get {
                 object obj = ResourceManager.GetObject("icon-5359553_640", resourceCulture);
@@ -96,6 +126,16 @@ namespace StudentDash_2._0.Properties {
         internal static System.Drawing.Bitmap icons8_car_unscreen {
             get {
                 object obj = ResourceManager.GetObject("icons8-car-unscreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_user_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-user-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +206,36 @@ namespace StudentDash_2._0.Properties {
         internal static System.Drawing.Bitmap Student_Dash_2_O_2__removebg_preview2 {
             get {
                 object obj = ResourceManager.GetObject("Student_Dash_2.O_2_-removebg-preview2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Student_Dash_2_O_5_ {
+            get {
+                object obj = ResourceManager.GetObject("Student Dash 2.O(5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Student_Dash_2_O_6_ {
+            get {
+                object obj = ResourceManager.GetObject("Student Dash 2.O(6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Student_Dcash_2_O_4_ {
+            get {
+                object obj = ResourceManager.GetObject("Student Dcash 2.O(4)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

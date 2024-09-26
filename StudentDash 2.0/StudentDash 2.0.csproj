@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\admin_home_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\admin_home_page.Designer.cs">
+      <DependentUpon>admin_home_page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\admin_login_page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,36 @@
     </Compile>
     <Compile Include="Forms\choose_login_page.Designer.cs">
       <DependentUpon>choose_login_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\home_book_ride.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\home_book_ride.Designer.cs">
+      <DependentUpon>home_book_ride.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\home_dashboard_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\home_dashboard_page.Designer.cs">
+      <DependentUpon>home_dashboard_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\home_share_ride.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\home_share_ride.Designer.cs">
+      <DependentUpon>home_share_ride.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\home_contact_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\home_contact_us.Designer.cs">
+      <DependentUpon>home_contact_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\user_home_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\user_home_page.Designer.cs">
+      <DependentUpon>user_home_page.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\user_login_page.cs">
       <SubType>Form</SubType>
@@ -84,11 +120,29 @@
     <Compile Include="start_page.Designer.cs">
       <DependentUpon>start_page.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\admin_home_page.resx">
+      <DependentUpon>admin_home_page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\admin_login_page.resx">
       <DependentUpon>admin_login_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\choose_login_page.resx">
       <DependentUpon>choose_login_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\home_book_ride.resx">
+      <DependentUpon>home_book_ride.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\home_dashboard_page.resx">
+      <DependentUpon>home_dashboard_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\home_share_ride.resx">
+      <DependentUpon>home_share_ride.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\home_contact_us.resx">
+      <DependentUpon>home_contact_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\user_home_page.resx">
+      <DependentUpon>user_home_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\user_login_page.resx">
       <DependentUpon>user_login_page.cs</DependentUpon>
@@ -155,6 +209,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot_2024-09-26_232413-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2bdf9038-62f0-4d1e-b329-fc4ef2b6ef861-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Dcash 2.O%284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Dash 2.O%285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Dash 2.O%286%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

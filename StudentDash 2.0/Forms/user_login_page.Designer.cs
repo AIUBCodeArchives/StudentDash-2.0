@@ -105,6 +105,7 @@
             this.login_btn.Size = new System.Drawing.Size(388, 53);
             this.login_btn.TabIndex = 7;
             this.login_btn.Text = "Log In";
+            this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
             this.login_btn.MouseLeave += new System.EventHandler(this.login_btn_MouseLeave);
             this.login_btn.MouseHover += new System.EventHandler(this.login_btn_MouseHover);
             // 

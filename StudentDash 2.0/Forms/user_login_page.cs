@@ -45,5 +45,12 @@ namespace StudentDash_2._0.Forms
             usp.Show();
             this.Visible = false;
         }
+
+        private void login_btn_Click(object sender, EventArgs e)
+        {
+            user_home_page uhp = new user_home_page();
+            uhp.Show();
+            this.Visible = false;
+        }
     }
 }
