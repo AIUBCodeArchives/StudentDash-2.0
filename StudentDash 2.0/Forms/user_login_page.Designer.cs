@@ -39,12 +39,12 @@
             this.login_lbl = new System.Windows.Forms.Label();
             this.forgot_password_lbl = new System.Windows.Forms.LinkLabel();
             this.back_btn = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.exit_btn = new System.Windows.Forms.PictureBox();
+            this.logo_pic = new System.Windows.Forms.PictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -212,17 +212,6 @@
             this.back_btn.TabStop = false;
             this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::StudentDash_2._0.Properties.Resources.Student_Dash_2_O_2__removebg_preview2;
-            this.pictureBox2.Location = new System.Drawing.Point(632, 178);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(607, 445);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
             // exit_btn
             // 
             this.exit_btn.BackColor = System.Drawing.Color.Transparent;
@@ -236,6 +225,17 @@
             this.exit_btn.TabStop = false;
             this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
             // 
+            // logo_pic
+            // 
+            this.logo_pic.BackColor = System.Drawing.Color.Transparent;
+            this.logo_pic.Image = global::StudentDash_2._0.Properties.Resources.Student_Dash_2_O_2__removebg_preview2;
+            this.logo_pic.Location = new System.Drawing.Point(609, 154);
+            this.logo_pic.Name = "logo_pic";
+            this.logo_pic.Size = new System.Drawing.Size(666, 493);
+            this.logo_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logo_pic.TabIndex = 7;
+            this.logo_pic.TabStop = false;
+            // 
             // user_login_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -243,8 +243,8 @@
             this.BackgroundImage = global::StudentDash_2._0.Properties.Resources._5;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1300, 800);
+            this.Controls.Add(this.logo_pic);
             this.Controls.Add(this.exit_btn);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.back_btn);
             this.Controls.Add(this.guna2Panel1);
             this.DoubleBuffered = true;
@@ -255,8 +255,8 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -274,7 +274,7 @@
         private System.Windows.Forms.LinkLabel forgot_password_lbl;
         private System.Windows.Forms.LinkLabel signup_btn;
         private System.Windows.Forms.Label dont_have_account_lbl;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox exit_btn;
+        private System.Windows.Forms.PictureBox logo_pic;
     }
 }

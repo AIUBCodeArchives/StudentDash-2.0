@@ -29,5 +29,22 @@ namespace StudentDash_2._0
         {
             Application.Exit();
         }
+
+        private void login_btn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            user_login_page ulp = new user_login_page();
+            ulp.Show();
+            this.Visible = false;
+        }
+
+        private void signup_btn_MouseHover(object sender, EventArgs e)
+        {
+            signup_btn.ForeColor = Color.Black;
+        }
+
+        private void signup_btn_MouseLeave(object sender, EventArgs e)
+        {
+            signup_btn.ForeColor = Color.White;
+        }
     }
 }

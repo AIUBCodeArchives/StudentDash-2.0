@@ -33,9 +33,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.user_btn = new Guna.UI2.WinForms.Guna2Button();
             this.admin_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.exit_btn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_logo_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).BeginInit();
             this.SuspendLayout();
             // 
             // logo_pic
@@ -112,8 +114,22 @@
             this.admin_btn.Size = new System.Drawing.Size(170, 52);
             this.admin_btn.TabIndex = 4;
             this.admin_btn.Text = "Admin";
+            this.admin_btn.Click += new System.EventHandler(this.admin_btn_Click);
             this.admin_btn.MouseLeave += new System.EventHandler(this.admin_btn_MouseLeave);
             this.admin_btn.MouseHover += new System.EventHandler(this.admin_btn_MouseHover);
+            // 
+            // exit_btn
+            // 
+            this.exit_btn.BackColor = System.Drawing.Color.Transparent;
+            this.exit_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exit_btn.Image = global::StudentDash_2._0.Properties.Resources.Screenshot_2024_09_26_232413_removebg_preview;
+            this.exit_btn.Location = new System.Drawing.Point(1257, 0);
+            this.exit_btn.Name = "exit_btn";
+            this.exit_btn.Size = new System.Drawing.Size(43, 34);
+            this.exit_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.exit_btn.TabIndex = 8;
+            this.exit_btn.TabStop = false;
+            this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
             // 
             // choose_login_page
             // 
@@ -122,6 +138,7 @@
             this.BackgroundImage = global::StudentDash_2._0.Properties.Resources._3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1300, 800);
+            this.Controls.Add(this.exit_btn);
             this.Controls.Add(this.admin_btn);
             this.Controls.Add(this.user_btn);
             this.Controls.Add(this.pictureBox1);
@@ -135,6 +152,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_logo_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -146,5 +164,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button user_btn;
         private Guna.UI2.WinForms.Guna2Button admin_btn;
+        private System.Windows.Forms.PictureBox exit_btn;
     }
 }

@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\admin_login_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\admin_login_page.Designer.cs">
+      <DependentUpon>admin_login_page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\choose_login_page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="start_page.Designer.cs">
       <DependentUpon>start_page.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\admin_login_page.resx">
+      <DependentUpon>admin_login_page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\choose_login_page.resx">
       <DependentUpon>choose_login_page.cs</DependentUpon>
     </EmbeddedResource>

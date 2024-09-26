@@ -43,5 +43,17 @@ namespace StudentDash_2._0.Forms
             ulp.Visible = true;
             this.Visible = false;
         }
+
+        private void exit_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void admin_btn_Click(object sender, EventArgs e)
+        {
+            admin_login_page alp = new admin_login_page();
+            alp.Show();
+            this.Visible = false;
+        }
     }
 }
