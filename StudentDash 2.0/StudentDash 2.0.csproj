@@ -64,6 +64,12 @@
     <Compile Include="Forms\user_login_page.Designer.cs">
       <DependentUpon>user_login_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\user_signup_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\user_signup_page.Designer.cs">
+      <DependentUpon>user_signup_page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="start_page.cs">
@@ -72,17 +78,14 @@
     <Compile Include="start_page.Designer.cs">
       <DependentUpon>start_page.cs</DependentUpon>
     </Compile>
-    <Compile Include="user_signup_page.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="user_signup_page.Designer.cs">
-      <DependentUpon>user_signup_page.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Forms\choose_login_page.resx">
       <DependentUpon>choose_login_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\user_login_page.resx">
       <DependentUpon>user_login_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\user_signup_page.resx">
+      <DependentUpon>user_signup_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,9 +99,6 @@
     </Compile>
     <EmbeddedResource Include="start_page.resx">
       <DependentUpon>start_page.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="user_signup_page.resx">
-      <DependentUpon>user_signup_page.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
