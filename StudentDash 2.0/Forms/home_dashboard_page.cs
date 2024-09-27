@@ -17,16 +17,17 @@ namespace StudentDash_2._0.Forms
         {
             InitializeComponent();
         }
-        string username, studentID, password;
+        string username, studentID, password, vehicle_number;
         static string myconnstring = "Data Source=RAIYEN-ZAYED-RA\\SQLEXPRESS;Initial Catalog=StudentDash;Integrated Security=True;TrustServerCertificate=True";
         SqlConnection conn = new SqlConnection(myconnstring);
 
         
-        public profile_panel(string studentID, string password)
+        public profile_panel(string studentID, string password, string vehicle_number)
         {
             InitializeComponent();
             this.studentID = studentID;
             this.password = password;
+            this.vehicle_number = vehicle_number;
 
             try
             {
@@ -53,6 +54,12 @@ namespace StudentDash_2._0.Forms
             }
             username_lbl.Text = $"Hi, {username.ToUpper()}";
             student_id_lbl.Text = studentID;
+
+            if(vehicle_number == "")
+            {
+                ride_shared_lbl.Visible = false ;
+                shared_count_lbl.Visible = false ;
+            }
         }
         private void exit_btn_Click(object sender, EventArgs e)
         {

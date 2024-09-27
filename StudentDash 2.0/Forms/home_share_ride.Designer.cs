@@ -223,6 +223,7 @@
             this.add_ride_btn.Size = new System.Drawing.Size(458, 53);
             this.add_ride_btn.TabIndex = 26;
             this.add_ride_btn.Text = "Add Ride";
+            this.add_ride_btn.Click += new System.EventHandler(this.add_ride_btn_Click);
             this.add_ride_btn.MouseLeave += new System.EventHandler(this.add_ride_btn_MouseLeave);
             this.add_ride_btn.MouseHover += new System.EventHandler(this.add_ride_btn_MouseHover);
             // 

@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using StudentDash_2._0.Db;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -49,6 +52,53 @@ namespace StudentDash_2._0.Forms
             search_destination_txtbox.Clear();
             rider_id_txtbox.Clear();
             search_destination_txtbox.Focus();
+        }
+        riders r = new riders();
+        private void home_book_ride_Load(object sender, EventArgs e)
+        {
+            DataTable dataTable = r.Select();
+            dataGridView1.DataSource = dataTable;
+            //dataGridView1.Visible = true;
+        }
+        static string myconnstring = "Data Source=RAIYEN-ZAYED-RA\\SQLEXPRESS;Initial Catalog=StudentDash;Integrated Security=True;TrustServerCertificate=True";
+        SqlConnection conn = new SqlConnection(myconnstring);
+        
+        private void search_btn_Click(object sender, EventArgs e)
+        {
+            String destination = search_destination_txtbox.Text;
+
+            try
+            {
+                string query = "SELECT * FROM Riders WHERE Destination LIKE '%" + search_destination_txtbox.Text + "%'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
+
+                if (dtable.Rows.Count > 0)
+                {
+                    destination = search_destination_txtbox.Text;
+
+                    //form to load 
+                    dataGridView1.DataSource = dtable;
+                }
+                else
+                {
+                    MessageBox.Show("Destination not found. \nplease try again later.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    search_destination_txtbox.Clear();
+
+                    //focus
+                    search_destination_txtbox.Focus();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }

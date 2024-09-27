@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Db\riders.cs" />
     <Compile Include="Db\users.cs" />
     <Compile Include="Forms\admin_home_page.cs">
       <SubType>Form</SubType>

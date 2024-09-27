@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace StudentDash_2._0.Forms
 {
@@ -17,13 +19,44 @@ namespace StudentDash_2._0.Forms
             InitializeComponent();
         }
 
-        string studentID, password;
+        string studentID, password, vehicle_number;
+        static string myconnstring = "Data Source=RAIYEN-ZAYED-RA\\SQLEXPRESS;Initial Catalog=StudentDash;Integrated Security=True;TrustServerCertificate=True";
+        SqlConnection conn = new SqlConnection(myconnstring);
 
         public user_home_page(string studentID, string password)
         {
             InitializeComponent();
             this.studentID = studentID;
             this.password = password;
+
+            try
+            {
+                string query = $"SELECT Vehicle_Number FROM Users WHERE studentID = @studentID";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                SqlCommand command = new SqlCommand(query, conn);
+                command.Parameters.AddWithValue("@studentID", studentID);
+                conn.Open();
+                object result = command.ExecuteScalar();
+                if (result != null)
+                {
+                    // Process the result, e.g., convert to string
+                    vehicle_number = result.ToString();
+                    // Now you have cellData and can use it as needed
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            if (vehicle_number == "")
+            {
+                share_ride_btn.Visible = false;
+            }
+
         }
 
         public void load_form(object Form)
@@ -61,7 +94,7 @@ namespace StudentDash_2._0.Forms
 
         private void share_ride_btn_Click(object sender, EventArgs e)
         {
-            load_form(new home_share_ride());
+            load_form(new home_share_ride(studentID, password, vehicle_number));
             dashboard_btn.FillColor = Color.FromArgb(94, 124, 137);
             book_ride_btn.FillColor = Color.FromArgb(94, 124, 137);
             share_ride_btn.FillColor = Color.FromArgb(155, 190, 200);
@@ -79,7 +112,7 @@ namespace StudentDash_2._0.Forms
 
         private void user_home_page_Load(object sender, EventArgs e)
         {
-            load_form(new profile_panel(studentID, password));
+            load_form(new profile_panel(studentID, password, vehicle_number));
         }
 
         private void back_btn_Click(object sender, EventArgs e)

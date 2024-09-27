@@ -83,6 +83,7 @@ namespace StudentDash_2._0
                 {
                     MessageBox.Show($"{u.Name} as an user added successfully.");
                     clear();
+                    name_txtbox.Focus();
                 }
                 else
                 {
