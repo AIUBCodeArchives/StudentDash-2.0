@@ -33,9 +33,9 @@
             this.sign_out_btn = new Guna.UI2.WinForms.Guna2Button();
             this.share_ride_btn = new Guna.UI2.WinForms.Guna2Button();
             this.book_ride_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.dashboard_btn = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.back_btn = new System.Windows.Forms.PictureBox();
+            this.dashboard_btn = new Guna.UI2.WinForms.Guna2Button();
             this.exit_btn = new System.Windows.Forms.PictureBox();
             this.main_panel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -52,9 +52,9 @@
             this.panel1.Controls.Add(this.sign_out_btn);
             this.panel1.Controls.Add(this.share_ride_btn);
             this.panel1.Controls.Add(this.book_ride_btn);
-            this.panel1.Controls.Add(this.dashboard_btn);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.back_btn);
+            this.panel1.Controls.Add(this.dashboard_btn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -63,6 +63,7 @@
             // 
             // contact_us_btn
             // 
+            this.contact_us_btn.Animated = true;
             this.contact_us_btn.BorderRadius = 25;
             this.contact_us_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.contact_us_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -70,7 +71,7 @@
             this.contact_us_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.contact_us_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.contact_us_btn.FillColor = System.Drawing.Color.Empty;
-            this.contact_us_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contact_us_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold);
             this.contact_us_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
             this.contact_us_btn.Location = new System.Drawing.Point(10, 672);
             this.contact_us_btn.Name = "contact_us_btn";
@@ -81,6 +82,7 @@
             // 
             // sign_out_btn
             // 
+            this.sign_out_btn.Animated = true;
             this.sign_out_btn.BorderRadius = 25;
             this.sign_out_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sign_out_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -88,7 +90,7 @@
             this.sign_out_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.sign_out_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.sign_out_btn.FillColor = System.Drawing.Color.Empty;
-            this.sign_out_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sign_out_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold);
             this.sign_out_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
             this.sign_out_btn.Location = new System.Drawing.Point(10, 739);
             this.sign_out_btn.Name = "sign_out_btn";
@@ -99,6 +101,7 @@
             // 
             // share_ride_btn
             // 
+            this.share_ride_btn.Animated = true;
             this.share_ride_btn.BorderRadius = 25;
             this.share_ride_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.share_ride_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -106,7 +109,7 @@
             this.share_ride_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.share_ride_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.share_ride_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(124)))), ((int)(((byte)(137)))));
-            this.share_ride_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.share_ride_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold);
             this.share_ride_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
             this.share_ride_btn.Location = new System.Drawing.Point(10, 374);
             this.share_ride_btn.Name = "share_ride_btn";
@@ -117,6 +120,7 @@
             // 
             // book_ride_btn
             // 
+            this.book_ride_btn.Animated = true;
             this.book_ride_btn.BorderRadius = 25;
             this.book_ride_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.book_ride_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -124,7 +128,7 @@
             this.book_ride_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.book_ride_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.book_ride_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(124)))), ((int)(((byte)(137)))));
-            this.book_ride_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.book_ride_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold);
             this.book_ride_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
             this.book_ride_btn.Location = new System.Drawing.Point(10, 307);
             this.book_ride_btn.Name = "book_ride_btn";
@@ -132,24 +136,6 @@
             this.book_ride_btn.TabIndex = 11;
             this.book_ride_btn.Text = "BOOK RIDE";
             this.book_ride_btn.Click += new System.EventHandler(this.book_ride_btn_Click);
-            // 
-            // dashboard_btn
-            // 
-            this.dashboard_btn.BorderRadius = 25;
-            this.dashboard_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dashboard_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.dashboard_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.dashboard_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.dashboard_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.dashboard_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(190)))), ((int)(((byte)(200)))));
-            this.dashboard_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dashboard_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
-            this.dashboard_btn.Location = new System.Drawing.Point(10, 240);
-            this.dashboard_btn.Name = "dashboard_btn";
-            this.dashboard_btn.Size = new System.Drawing.Size(280, 61);
-            this.dashboard_btn.TabIndex = 10;
-            this.dashboard_btn.Text = "DASHBOARD";
-            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
             // 
             // pictureBox1
             // 
@@ -175,6 +161,27 @@
             this.back_btn.TabStop = false;
             this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
+            // dashboard_btn
+            // 
+            this.dashboard_btn.Animated = true;
+            this.dashboard_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.dashboard_btn.BorderRadius = 25;
+            this.dashboard_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dashboard_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.dashboard_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.dashboard_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.dashboard_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.dashboard_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(190)))), ((int)(((byte)(200)))));
+            this.dashboard_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold);
+            this.dashboard_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
+            this.dashboard_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dashboard_btn.Location = new System.Drawing.Point(10, 240);
+            this.dashboard_btn.Name = "dashboard_btn";
+            this.dashboard_btn.Size = new System.Drawing.Size(280, 61);
+            this.dashboard_btn.TabIndex = 10;
+            this.dashboard_btn.Text = "DASHBOARD";
+            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
+            // 
             // exit_btn
             // 
             this.exit_btn.BackColor = System.Drawing.Color.Transparent;
@@ -191,9 +198,9 @@
             // 
             this.main_panel.Controls.Add(this.exit_btn);
             this.main_panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.main_panel.Location = new System.Drawing.Point(300, 0);
+            this.main_panel.Location = new System.Drawing.Point(296, 0);
             this.main_panel.Name = "main_panel";
-            this.main_panel.Size = new System.Drawing.Size(1000, 800);
+            this.main_panel.Size = new System.Drawing.Size(1004, 800);
             this.main_panel.TabIndex = 10;
             // 
             // user_home_page

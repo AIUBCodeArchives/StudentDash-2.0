@@ -17,6 +17,15 @@ namespace StudentDash_2._0.Forms
             InitializeComponent();
         }
 
+        string studentID, password;
+
+        public user_home_page(string studentID, string password)
+        {
+            InitializeComponent();
+            this.studentID = studentID;
+            this.password = password;
+        }
+
         public void load_form(object Form)
         {
             if(this.main_panel.Controls.Count > 0)
@@ -70,7 +79,7 @@ namespace StudentDash_2._0.Forms
 
         private void user_home_page_Load(object sender, EventArgs e)
         {
-            load_form(new profile_panel());
+            load_form(new profile_panel(studentID, password));
         }
 
         private void back_btn_Click(object sender, EventArgs e)

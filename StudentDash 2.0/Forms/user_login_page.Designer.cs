@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.show_password_btn = new System.Windows.Forms.PictureBox();
             this.signup_btn = new System.Windows.Forms.LinkLabel();
             this.dont_have_account_lbl = new System.Windows.Forms.Label();
             this.login_btn = new Guna.UI2.WinForms.Guna2Button();
@@ -42,6 +43,7 @@
             this.exit_btn = new System.Windows.Forms.PictureBox();
             this.logo_pic = new System.Windows.Forms.PictureBox();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.show_password_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
@@ -51,6 +53,7 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderRadius = 30;
+            this.guna2Panel1.Controls.Add(this.show_password_btn);
             this.guna2Panel1.Controls.Add(this.signup_btn);
             this.guna2Panel1.Controls.Add(this.dont_have_account_lbl);
             this.guna2Panel1.Controls.Add(this.login_btn);
@@ -65,6 +68,18 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(480, 657);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // show_password_btn
+            // 
+            this.show_password_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.show_password_btn.Image = global::StudentDash_2._0.Properties.Resources.icons8_eye_50;
+            this.show_password_btn.Location = new System.Drawing.Point(389, 367);
+            this.show_password_btn.Name = "show_password_btn";
+            this.show_password_btn.Size = new System.Drawing.Size(26, 29);
+            this.show_password_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.show_password_btn.TabIndex = 10;
+            this.show_password_btn.TabStop = false;
+            this.show_password_btn.Click += new System.EventHandler(this.show_password_btn_Click);
             // 
             // signup_btn
             // 
@@ -122,11 +137,12 @@
             this.password_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.password_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.password_txtbox.ForeColor = System.Drawing.Color.Black;
             this.password_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_txtbox.Location = new System.Drawing.Point(46, 351);
             this.password_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.password_txtbox.Name = "password_txtbox";
-            this.password_txtbox.PasswordChar = '\0';
+            this.password_txtbox.PasswordChar = '*';
             this.password_txtbox.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.password_txtbox.PlaceholderText = "Enter your password";
             this.password_txtbox.SelectedText = "";
@@ -146,6 +162,7 @@
             this.student_id_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.student_id_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.student_id_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.student_id_txtbox.ForeColor = System.Drawing.Color.Black;
             this.student_id_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.student_id_txtbox.Location = new System.Drawing.Point(46, 229);
             this.student_id_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -255,6 +272,7 @@
             this.Text = "user_login_page";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.show_password_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
@@ -277,5 +295,6 @@
         private System.Windows.Forms.Label dont_have_account_lbl;
         private System.Windows.Forms.PictureBox exit_btn;
         private System.Windows.Forms.PictureBox logo_pic;
+        private System.Windows.Forms.PictureBox show_password_btn;
     }
 }

@@ -43,5 +43,12 @@ namespace StudentDash_2._0.Forms
 
             book_btn.ForeColor = Color.White;
         }
+
+        private void clear_all_lbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            search_destination_txtbox.Clear();
+            rider_id_txtbox.Clear();
+            search_destination_txtbox.Focus();
+        }
     }
 }

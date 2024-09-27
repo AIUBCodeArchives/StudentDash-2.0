@@ -41,6 +41,7 @@
             this.exit_btn = new System.Windows.Forms.PictureBox();
             this.back_btn = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.clear_all_lbl = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).BeginInit();
@@ -62,6 +63,7 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderRadius = 30;
+            this.guna2Panel1.Controls.Add(this.clear_all_lbl);
             this.guna2Panel1.Controls.Add(this.customer_care_btn);
             this.guna2Panel1.Controls.Add(this.cant_login_lbl);
             this.guna2Panel1.Controls.Add(this.login_btn);
@@ -131,11 +133,12 @@
             this.password_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.password_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.password_txtbox.ForeColor = System.Drawing.Color.Black;
             this.password_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_txtbox.Location = new System.Drawing.Point(46, 278);
             this.password_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.password_txtbox.Name = "password_txtbox";
-            this.password_txtbox.PasswordChar = '\0';
+            this.password_txtbox.PasswordChar = '*';
             this.password_txtbox.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.password_txtbox.PlaceholderText = "Enter your password";
             this.password_txtbox.SelectedText = "";
@@ -155,6 +158,7 @@
             this.admin_id_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.admin_id_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.admin_id_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.admin_id_txtbox.ForeColor = System.Drawing.Color.Black;
             this.admin_id_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.admin_id_txtbox.Location = new System.Drawing.Point(46, 156);
             this.admin_id_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -235,6 +239,19 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Admin Login";
             // 
+            // clear_all_lbl
+            // 
+            this.clear_all_lbl.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            this.clear_all_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_all_lbl.LinkColor = System.Drawing.Color.Black;
+            this.clear_all_lbl.Location = new System.Drawing.Point(315, 342);
+            this.clear_all_lbl.Name = "clear_all_lbl";
+            this.clear_all_lbl.Size = new System.Drawing.Size(119, 23);
+            this.clear_all_lbl.TabIndex = 21;
+            this.clear_all_lbl.TabStop = true;
+            this.clear_all_lbl.Text = "Clear All";
+            this.clear_all_lbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clear_all_lbl_LinkClicked);
+            // 
             // admin_login_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -277,5 +294,6 @@
         private System.Windows.Forms.PictureBox exit_btn;
         private System.Windows.Forms.PictureBox back_btn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel clear_all_lbl;
     }
 }

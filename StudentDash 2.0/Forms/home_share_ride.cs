@@ -31,5 +31,17 @@ namespace StudentDash_2._0.Forms
         {
             add_ride_btn.ForeColor = Color.White;
         }
+
+        private void clear_all_lbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            current_location_txtbox.Clear();
+            destination_txtbox.Clear();
+            time_txtbox.Clear();
+            yes_radio_btn.Checked = true;
+            no_radio_btn.Checked = false;
+            fare_ammount_txtbox.Clear();
+            current_location_txtbox.Focus();
+
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace StudentDash_2._0
         {
             if (load_progress_bar.Value < 100)
             {
-                load_progress_bar.Value += 10;
+                load_progress_bar.Value += 3;
                 progress_percentage_lbl.Text = load_progress_bar.Value.ToString() + "%";
             }
             else

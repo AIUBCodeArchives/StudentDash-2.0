@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Db\users.cs" />
     <Compile Include="Forms\admin_home_page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +231,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Student Dash 2.O%286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

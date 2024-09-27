@@ -50,10 +50,10 @@
             this.ride_booked_lbl = new System.Windows.Forms.Label();
             this.username_lbl = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.vehicle_number_lbl = new System.Windows.Forms.Label();
-            this.report_count_lbl = new System.Windows.Forms.Label();
+            this.vehicle_number_value_lbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.report_count_lbl = new System.Windows.Forms.Label();
+            this.vehicle_number_lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.admin_logo)).BeginInit();
@@ -140,7 +140,7 @@
             this.admin_id_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
             this.admin_id_lbl.Location = new System.Drawing.Point(117, 401);
             this.admin_id_lbl.Name = "admin_id_lbl";
-            this.admin_id_lbl.Size = new System.Drawing.Size(182, 45);
+            this.admin_id_lbl.Size = new System.Drawing.Size(176, 44);
             this.admin_id_lbl.TabIndex = 29;
             this.admin_id_lbl.Text = "Admin ID";
             // 
@@ -152,7 +152,7 @@
             this.admin_name_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
             this.admin_name_lbl.Location = new System.Drawing.Point(84, 476);
             this.admin_name_lbl.Name = "admin_name_lbl";
-            this.admin_name_lbl.Size = new System.Drawing.Size(246, 45);
+            this.admin_name_lbl.Size = new System.Drawing.Size(237, 44);
             this.admin_name_lbl.TabIndex = 30;
             this.admin_name_lbl.Text = "Admin Name";
             // 
@@ -163,7 +163,7 @@
             this.total_user_panel.Controls.Add(this.user_count_lbl);
             this.total_user_panel.Controls.Add(this.total_user_lbl);
             this.total_user_panel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(121)))), ((int)(((byte)(139)))));
-            this.total_user_panel.Location = new System.Drawing.Point(389, 124);
+            this.total_user_panel.Location = new System.Drawing.Point(389, 130);
             this.total_user_panel.Name = "total_user_panel";
             this.total_user_panel.Size = new System.Drawing.Size(313, 163);
             this.total_user_panel.TabIndex = 31;
@@ -188,7 +188,7 @@
             this.total_user_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
             this.total_user_lbl.Location = new System.Drawing.Point(27, 12);
             this.total_user_lbl.Name = "total_user_lbl";
-            this.total_user_lbl.Size = new System.Drawing.Size(204, 45);
+            this.total_user_lbl.Size = new System.Drawing.Size(199, 44);
             this.total_user_lbl.TabIndex = 32;
             this.total_user_lbl.Text = "Total User:";
             // 
@@ -359,9 +359,9 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderRadius = 30;
+            this.guna2Panel1.Controls.Add(this.vehicle_number_value_lbl);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.report_count_lbl);
-            this.guna2Panel1.Controls.Add(this.guna2TextBox1);
             this.guna2Panel1.Controls.Add(this.vehicle_number_lbl);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(121)))), ((int)(((byte)(139)))));
             this.guna2Panel1.Location = new System.Drawing.Point(809, 455);
@@ -369,41 +369,29 @@
             this.guna2Panel1.Size = new System.Drawing.Size(422, 262);
             this.guna2Panel1.TabIndex = 35;
             // 
-            // guna2TextBox1
+            // vehicle_number_value_lbl
             // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderRadius = 18;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(33, 71);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox1.PlaceholderText = "Enter your old password";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(355, 47);
-            this.guna2TextBox1.TabIndex = 36;
+            this.vehicle_number_value_lbl.AutoSize = true;
+            this.vehicle_number_value_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.vehicle_number_value_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vehicle_number_value_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(89)))));
+            this.vehicle_number_value_lbl.Location = new System.Drawing.Point(59, 67);
+            this.vehicle_number_value_lbl.Name = "vehicle_number_value_lbl";
+            this.vehicle_number_value_lbl.Size = new System.Drawing.Size(288, 48);
+            this.vehicle_number_value_lbl.TabIndex = 38;
+            this.vehicle_number_value_lbl.Text = "vehicle number";
             // 
-            // vehicle_number_lbl
+            // label1
             // 
-            this.vehicle_number_lbl.AutoSize = true;
-            this.vehicle_number_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.vehicle_number_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vehicle_number_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
-            this.vehicle_number_lbl.Location = new System.Drawing.Point(23, 7);
-            this.vehicle_number_lbl.Name = "vehicle_number_lbl";
-            this.vehicle_number_lbl.Size = new System.Drawing.Size(377, 60);
-            this.vehicle_number_lbl.TabIndex = 15;
-            this.vehicle_number_lbl.Text = "Vehicle Number";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(89)))));
+            this.label1.Location = new System.Drawing.Point(294, 163);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 48);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "3";
             // 
             // report_count_lbl
             // 
@@ -417,17 +405,17 @@
             this.report_count_lbl.TabIndex = 37;
             this.report_count_lbl.Text = "Report Count:";
             // 
-            // label1
+            // vehicle_number_lbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(89)))));
-            this.label1.Location = new System.Drawing.Point(294, 163);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 48);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "3";
+            this.vehicle_number_lbl.AutoSize = true;
+            this.vehicle_number_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.vehicle_number_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vehicle_number_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
+            this.vehicle_number_lbl.Location = new System.Drawing.Point(23, 7);
+            this.vehicle_number_lbl.Name = "vehicle_number_lbl";
+            this.vehicle_number_lbl.Size = new System.Drawing.Size(377, 60);
+            this.vehicle_number_lbl.TabIndex = 15;
+            this.vehicle_number_lbl.Text = "Vehicle Number";
             // 
             // admin_home_page
             // 
@@ -494,9 +482,9 @@
         private System.Windows.Forms.Label ride_booked_lbl;
         private System.Windows.Forms.Label username_lbl;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Label vehicle_number_lbl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label report_count_lbl;
+        private System.Windows.Forms.Label vehicle_number_value_lbl;
     }
 }

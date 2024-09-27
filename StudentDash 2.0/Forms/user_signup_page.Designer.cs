@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.clear_all_lbl = new System.Windows.Forms.LinkLabel();
+            this.vehicle_number_txtbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.vehicle_number_lbl = new System.Windows.Forms.Label();
             this.confirm_password_txtbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.confirm_password_lbl = new System.Windows.Forms.Label();
@@ -46,17 +47,20 @@
             this.exit_btn = new System.Windows.Forms.PictureBox();
             this.back_btn = new System.Windows.Forms.PictureBox();
             this.logo_pic = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderRadius = 30;
-            this.guna2Panel1.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel1.Controls.Add(this.clear_all_lbl);
+            this.guna2Panel1.Controls.Add(this.vehicle_number_txtbox);
             this.guna2Panel1.Controls.Add(this.vehicle_number_lbl);
             this.guna2Panel1.Controls.Add(this.confirm_password_txtbox);
             this.guna2Panel1.Controls.Add(this.confirm_password_lbl);
@@ -76,29 +80,43 @@
             this.guna2Panel1.Size = new System.Drawing.Size(480, 657);
             this.guna2Panel1.TabIndex = 4;
             // 
-            // guna2TextBox1
+            // clear_all_lbl
             // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderRadius = 18;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(46, 447);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox1.PlaceholderText = "Enter your vehicle number";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(388, 47);
-            this.guna2TextBox1.TabIndex = 19;
+            this.clear_all_lbl.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            this.clear_all_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_all_lbl.LinkColor = System.Drawing.Color.Black;
+            this.clear_all_lbl.Location = new System.Drawing.Point(345, 498);
+            this.clear_all_lbl.Name = "clear_all_lbl";
+            this.clear_all_lbl.Size = new System.Drawing.Size(119, 23);
+            this.clear_all_lbl.TabIndex = 20;
+            this.clear_all_lbl.TabStop = true;
+            this.clear_all_lbl.Text = "Clear All";
+            this.clear_all_lbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clear_all_lbl_LinkClicked);
+            // 
+            // vehicle_number_txtbox
+            // 
+            this.vehicle_number_txtbox.BackColor = System.Drawing.Color.Transparent;
+            this.vehicle_number_txtbox.BorderRadius = 18;
+            this.vehicle_number_txtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.vehicle_number_txtbox.DefaultText = "";
+            this.vehicle_number_txtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.vehicle_number_txtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.vehicle_number_txtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.vehicle_number_txtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.vehicle_number_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.vehicle_number_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.vehicle_number_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.vehicle_number_txtbox.ForeColor = System.Drawing.Color.Black;
+            this.vehicle_number_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.vehicle_number_txtbox.Location = new System.Drawing.Point(46, 447);
+            this.vehicle_number_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.vehicle_number_txtbox.Name = "vehicle_number_txtbox";
+            this.vehicle_number_txtbox.PasswordChar = '\0';
+            this.vehicle_number_txtbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.vehicle_number_txtbox.PlaceholderText = "Enter your vehicle number";
+            this.vehicle_number_txtbox.SelectedText = "";
+            this.vehicle_number_txtbox.Size = new System.Drawing.Size(388, 47);
+            this.vehicle_number_txtbox.TabIndex = 19;
             // 
             // vehicle_number_lbl
             // 
@@ -123,6 +141,7 @@
             this.confirm_password_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.confirm_password_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirm_password_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.confirm_password_txtbox.ForeColor = System.Drawing.Color.Black;
             this.confirm_password_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirm_password_txtbox.Location = new System.Drawing.Point(46, 366);
             this.confirm_password_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -157,6 +176,7 @@
             this.password_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.password_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.password_txtbox.ForeColor = System.Drawing.Color.Black;
             this.password_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_txtbox.Location = new System.Drawing.Point(46, 286);
             this.password_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -191,6 +211,7 @@
             this.student_id_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.student_id_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.student_id_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.student_id_txtbox.ForeColor = System.Drawing.Color.Black;
             this.student_id_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.student_id_txtbox.Location = new System.Drawing.Point(46, 205);
             this.student_id_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -285,6 +306,7 @@
             this.signup_btn.Size = new System.Drawing.Size(388, 53);
             this.signup_btn.TabIndex = 7;
             this.signup_btn.Text = "Sign Up";
+            this.signup_btn.Click += new System.EventHandler(this.signup_btn_Click);
             this.signup_btn.MouseLeave += new System.EventHandler(this.signup_btn_MouseLeave);
             this.signup_btn.MouseHover += new System.EventHandler(this.signup_btn_MouseHover);
             // 
@@ -336,12 +358,23 @@
             this.logo_pic.TabIndex = 8;
             this.logo_pic.TabStop = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(697, 204);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(518, 389);
+            this.dataGridView1.TabIndex = 9;
+            // 
             // user_signup_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::StudentDash_2._0.Properties.Resources._5;
             this.ClientSize = new System.Drawing.Size(1300, 800);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.logo_pic);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.exit_btn);
@@ -355,6 +388,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -376,8 +410,10 @@
         private System.Windows.Forms.Label confirm_password_lbl;
         private Guna.UI2.WinForms.Guna2TextBox password_txtbox;
         private System.Windows.Forms.Label password_lbl;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox vehicle_number_txtbox;
         private System.Windows.Forms.Label vehicle_number_lbl;
         private System.Windows.Forms.PictureBox logo_pic;
+        private System.Windows.Forms.LinkLabel clear_all_lbl;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

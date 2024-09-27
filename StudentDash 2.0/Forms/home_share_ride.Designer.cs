@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.book_ride_lbl = new System.Windows.Forms.Label();
-            this.student_id_txtbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.current_location_txtbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.cuurent_location_lbl = new System.Windows.Forms.Label();
             this.destination_txtbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.destination_lbl = new System.Windows.Forms.Label();
@@ -42,6 +42,7 @@
             this.ride_mode_lbl = new System.Windows.Forms.Label();
             this.yes_radio_btn = new System.Windows.Forms.RadioButton();
             this.no_radio_btn = new System.Windows.Forms.RadioButton();
+            this.clear_all_lbl = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,29 +58,30 @@
             this.book_ride_lbl.TabIndex = 17;
             this.book_ride_lbl.Text = "SHARE RIDE";
             // 
-            // student_id_txtbox
+            // current_location_txtbox
             // 
-            this.student_id_txtbox.BackColor = System.Drawing.Color.Transparent;
-            this.student_id_txtbox.BorderRadius = 22;
-            this.student_id_txtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.student_id_txtbox.DefaultText = "";
-            this.student_id_txtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.student_id_txtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.student_id_txtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.student_id_txtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.student_id_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.student_id_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.student_id_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.student_id_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.student_id_txtbox.Location = new System.Drawing.Point(34, 156);
-            this.student_id_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.student_id_txtbox.Name = "student_id_txtbox";
-            this.student_id_txtbox.PasswordChar = '\0';
-            this.student_id_txtbox.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.student_id_txtbox.PlaceholderText = "Enter your location";
-            this.student_id_txtbox.SelectedText = "";
-            this.student_id_txtbox.Size = new System.Drawing.Size(458, 60);
-            this.student_id_txtbox.TabIndex = 19;
+            this.current_location_txtbox.BackColor = System.Drawing.Color.Transparent;
+            this.current_location_txtbox.BorderRadius = 22;
+            this.current_location_txtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.current_location_txtbox.DefaultText = "";
+            this.current_location_txtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.current_location_txtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.current_location_txtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.current_location_txtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.current_location_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.current_location_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.current_location_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.current_location_txtbox.ForeColor = System.Drawing.Color.Black;
+            this.current_location_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.current_location_txtbox.Location = new System.Drawing.Point(34, 156);
+            this.current_location_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.current_location_txtbox.Name = "current_location_txtbox";
+            this.current_location_txtbox.PasswordChar = '\0';
+            this.current_location_txtbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.current_location_txtbox.PlaceholderText = "Enter your location";
+            this.current_location_txtbox.SelectedText = "";
+            this.current_location_txtbox.Size = new System.Drawing.Size(458, 60);
+            this.current_location_txtbox.TabIndex = 19;
             // 
             // cuurent_location_lbl
             // 
@@ -105,6 +107,7 @@
             this.destination_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.destination_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.destination_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.destination_txtbox.ForeColor = System.Drawing.Color.Black;
             this.destination_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.destination_txtbox.Location = new System.Drawing.Point(34, 259);
             this.destination_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -140,6 +143,7 @@
             this.time_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.time_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.time_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.time_txtbox.ForeColor = System.Drawing.Color.Black;
             this.time_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.time_txtbox.Location = new System.Drawing.Point(34, 369);
             this.time_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -175,6 +179,7 @@
             this.fare_ammount_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.fare_ammount_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fare_ammount_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.fare_ammount_txtbox.ForeColor = System.Drawing.Color.Black;
             this.fare_ammount_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fare_ammount_txtbox.Location = new System.Drawing.Point(34, 588);
             this.fare_ammount_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -237,14 +242,14 @@
             this.ride_mode_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ride_mode_lbl.Location = new System.Drawing.Point(45, 456);
             this.ride_mode_lbl.Name = "ride_mode_lbl";
-            this.ride_mode_lbl.Size = new System.Drawing.Size(104, 20);
+            this.ride_mode_lbl.Size = new System.Drawing.Size(96, 20);
             this.ride_mode_lbl.TabIndex = 30;
-            this.ride_mode_lbl.Text = "Ride Mode:";
+            this.ride_mode_lbl.Text = "Paid Ride:";
             // 
             // yes_radio_btn
             // 
             this.yes_radio_btn.AutoSize = true;
-            this.yes_radio_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(121)))), ((int)(((byte)(139)))));
+            this.yes_radio_btn.BackColor = System.Drawing.Color.Transparent;
             this.yes_radio_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yes_radio_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
             this.yes_radio_btn.Location = new System.Drawing.Point(72, 494);
@@ -258,7 +263,7 @@
             // no_radio_btn
             // 
             this.no_radio_btn.AutoSize = true;
-            this.no_radio_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(121)))), ((int)(((byte)(139)))));
+            this.no_radio_btn.BackColor = System.Drawing.Color.Transparent;
             this.no_radio_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.no_radio_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
             this.no_radio_btn.Location = new System.Drawing.Point(347, 494);
@@ -269,6 +274,20 @@
             this.no_radio_btn.Text = "NO";
             this.no_radio_btn.UseVisualStyleBackColor = false;
             // 
+            // clear_all_lbl
+            // 
+            this.clear_all_lbl.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            this.clear_all_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.clear_all_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_all_lbl.LinkColor = System.Drawing.Color.Black;
+            this.clear_all_lbl.Location = new System.Drawing.Point(373, 652);
+            this.clear_all_lbl.Name = "clear_all_lbl";
+            this.clear_all_lbl.Size = new System.Drawing.Size(119, 23);
+            this.clear_all_lbl.TabIndex = 33;
+            this.clear_all_lbl.TabStop = true;
+            this.clear_all_lbl.Text = "Clear All";
+            this.clear_all_lbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clear_all_lbl_LinkClicked);
+            // 
             // home_share_ride
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -277,6 +296,7 @@
             this.BackgroundImage = global::StudentDash_2._0.Properties.Resources._12g;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 800);
+            this.Controls.Add(this.clear_all_lbl);
             this.Controls.Add(this.no_radio_btn);
             this.Controls.Add(this.yes_radio_btn);
             this.Controls.Add(this.ride_mode_lbl);
@@ -288,7 +308,7 @@
             this.Controls.Add(this.time_lbl);
             this.Controls.Add(this.destination_txtbox);
             this.Controls.Add(this.destination_lbl);
-            this.Controls.Add(this.student_id_txtbox);
+            this.Controls.Add(this.current_location_txtbox);
             this.Controls.Add(this.cuurent_location_lbl);
             this.Controls.Add(this.book_ride_lbl);
             this.DoubleBuffered = true;
@@ -305,7 +325,7 @@
         #endregion
 
         private System.Windows.Forms.Label book_ride_lbl;
-        private Guna.UI2.WinForms.Guna2TextBox student_id_txtbox;
+        private Guna.UI2.WinForms.Guna2TextBox current_location_txtbox;
         private System.Windows.Forms.Label cuurent_location_lbl;
         private Guna.UI2.WinForms.Guna2TextBox destination_txtbox;
         private System.Windows.Forms.Label destination_lbl;
@@ -318,5 +338,6 @@
         private System.Windows.Forms.Label ride_mode_lbl;
         private System.Windows.Forms.RadioButton yes_radio_btn;
         private System.Windows.Forms.RadioButton no_radio_btn;
+        private System.Windows.Forms.LinkLabel clear_all_lbl;
     }
 }

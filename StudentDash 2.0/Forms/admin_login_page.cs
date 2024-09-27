@@ -45,5 +45,12 @@ namespace StudentDash_2._0.Forms
             ahp.Show();
             this.Visible = false;
         }
+
+        private void clear_all_lbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            admin_id_txtbox.Clear();
+            password_txtbox.Clear();
+            admin_id_txtbox.Focus();
+        }
     }
 }
