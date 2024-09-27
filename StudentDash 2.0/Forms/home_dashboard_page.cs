@@ -69,6 +69,95 @@ namespace StudentDash_2._0.Forms
             change_password_btn.ForeColor = Color.White;
         }
 
+        private void change_password_btn_Click(object sender, EventArgs e)
+        {
+            string old_password = old_password_txtbox.Text;
+            string new_password = new_password_txtbox.Text;
+            bool success = false;
+            try
+            {
+                string query = "UPDATE Users SET Password = @new_password WHERE Password = @old_password";
+                //SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                SqlCommand command = new SqlCommand(query, conn);
+                command.Parameters.AddWithValue("@new_password", new_password);
+                command.Parameters.AddWithValue("@old_password", old_password);
+                conn.Open();
+                //MessageBox.Show("Password changed successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                int rows = command.ExecuteNonQuery();
+                //MessageBox.Show(rows.ToString());
+                if (rows > 0)
+                {
+                    success = true;
+                }
+                else
+                {
+                    success = false;
+                }
+
+                if (success)
+                {
+                    MessageBox.Show("Password changed successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Password changing failed.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void number_update_btn_Click(object sender, EventArgs e)
+        {
+            string old_number = old_number_txtbox.Text;
+            string new_number = new_number_txtbox.Text;
+            bool success = false;
+            try
+            {
+                string query = "UPDATE Users SET Vehicle_Number = @new_number WHERE Vehicle_Number = @old_number";
+                //SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                SqlCommand command = new SqlCommand(query, conn);
+                command.Parameters.AddWithValue("@new_number", new_number);
+                command.Parameters.AddWithValue("@old_number", old_number);
+                conn.Open();
+                //MessageBox.Show("Vehicle number changed successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                int rows = command.ExecuteNonQuery();
+                //MessageBox.Show(rows.ToString());
+                if (rows > 0)
+                {
+                    success = true;
+                }
+                else
+                {
+                    success = false;
+                }
+
+                if (success)
+                {
+                    MessageBox.Show("Vehicle number changed successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Vehicle number changing failed.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error");
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
         private void number_update_btn_MouseHover(object sender, EventArgs e)
         {
             number_update_btn.ForeColor = Color.Black;

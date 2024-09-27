@@ -43,7 +43,11 @@
             this.yes_radio_btn = new System.Windows.Forms.RadioButton();
             this.no_radio_btn = new System.Windows.Forms.RadioButton();
             this.clear_all_lbl = new System.Windows.Forms.LinkLabel();
+            this.paid_ride_group_btns = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.no_of_seats_txtbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.no_of_seats = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).BeginInit();
+            this.paid_ride_group_btns.SuspendLayout();
             this.SuspendLayout();
             // 
             // book_ride_lbl
@@ -188,7 +192,7 @@
             this.fare_ammount_txtbox.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.fare_ammount_txtbox.PlaceholderText = "Enter fare ammount";
             this.fare_ammount_txtbox.SelectedText = "";
-            this.fare_ammount_txtbox.Size = new System.Drawing.Size(458, 60);
+            this.fare_ammount_txtbox.Size = new System.Drawing.Size(218, 60);
             this.fare_ammount_txtbox.TabIndex = 25;
             // 
             // fare_ammount_lbl
@@ -252,7 +256,7 @@
             this.yes_radio_btn.BackColor = System.Drawing.Color.Transparent;
             this.yes_radio_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yes_radio_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
-            this.yes_radio_btn.Location = new System.Drawing.Point(72, 494);
+            this.yes_radio_btn.Location = new System.Drawing.Point(45, 10);
             this.yes_radio_btn.Name = "yes_radio_btn";
             this.yes_radio_btn.Size = new System.Drawing.Size(89, 43);
             this.yes_radio_btn.TabIndex = 31;
@@ -266,7 +270,7 @@
             this.no_radio_btn.BackColor = System.Drawing.Color.Transparent;
             this.no_radio_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.no_radio_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
-            this.no_radio_btn.Location = new System.Drawing.Point(347, 494);
+            this.no_radio_btn.Location = new System.Drawing.Point(312, 10);
             this.no_radio_btn.Name = "no_radio_btn";
             this.no_radio_btn.Size = new System.Drawing.Size(85, 43);
             this.no_radio_btn.TabIndex = 32;
@@ -288,6 +292,57 @@
             this.clear_all_lbl.Text = "Clear All";
             this.clear_all_lbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clear_all_lbl_LinkClicked);
             // 
+            // paid_ride_group_btns
+            // 
+            this.paid_ride_group_btns.BackColor = System.Drawing.Color.Transparent;
+            this.paid_ride_group_btns.BorderColor = System.Drawing.Color.Transparent;
+            this.paid_ride_group_btns.Controls.Add(this.yes_radio_btn);
+            this.paid_ride_group_btns.Controls.Add(this.no_radio_btn);
+            this.paid_ride_group_btns.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.paid_ride_group_btns.FillColor = System.Drawing.Color.Transparent;
+            this.paid_ride_group_btns.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.paid_ride_group_btns.ForeColor = System.Drawing.Color.Transparent;
+            this.paid_ride_group_btns.Location = new System.Drawing.Point(34, 481);
+            this.paid_ride_group_btns.Name = "paid_ride_group_btns";
+            this.paid_ride_group_btns.Size = new System.Drawing.Size(458, 66);
+            this.paid_ride_group_btns.TabIndex = 35;
+            // 
+            // no_of_seats_txtbox
+            // 
+            this.no_of_seats_txtbox.BackColor = System.Drawing.Color.Transparent;
+            this.no_of_seats_txtbox.BorderRadius = 22;
+            this.no_of_seats_txtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.no_of_seats_txtbox.DefaultText = "";
+            this.no_of_seats_txtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.no_of_seats_txtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.no_of_seats_txtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.no_of_seats_txtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.no_of_seats_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.no_of_seats_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.no_of_seats_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.no_of_seats_txtbox.ForeColor = System.Drawing.Color.Black;
+            this.no_of_seats_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.no_of_seats_txtbox.Location = new System.Drawing.Point(274, 588);
+            this.no_of_seats_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.no_of_seats_txtbox.Name = "no_of_seats_txtbox";
+            this.no_of_seats_txtbox.PasswordChar = '\0';
+            this.no_of_seats_txtbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.no_of_seats_txtbox.PlaceholderText = "Enter number of seats";
+            this.no_of_seats_txtbox.SelectedText = "";
+            this.no_of_seats_txtbox.Size = new System.Drawing.Size(218, 60);
+            this.no_of_seats_txtbox.TabIndex = 37;
+            // 
+            // no_of_seats
+            // 
+            this.no_of_seats.AutoSize = true;
+            this.no_of_seats.BackColor = System.Drawing.Color.Transparent;
+            this.no_of_seats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.no_of_seats.Location = new System.Drawing.Point(285, 564);
+            this.no_of_seats.Name = "no_of_seats";
+            this.no_of_seats.Size = new System.Drawing.Size(117, 20);
+            this.no_of_seats.TabIndex = 36;
+            this.no_of_seats.Text = "No. of seats:";
+            // 
             // home_share_ride
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -296,9 +351,10 @@
             this.BackgroundImage = global::StudentDash_2._0.Properties.Resources._12g;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 800);
+            this.Controls.Add(this.no_of_seats_txtbox);
+            this.Controls.Add(this.no_of_seats);
+            this.Controls.Add(this.paid_ride_group_btns);
             this.Controls.Add(this.clear_all_lbl);
-            this.Controls.Add(this.no_radio_btn);
-            this.Controls.Add(this.yes_radio_btn);
             this.Controls.Add(this.ride_mode_lbl);
             this.Controls.Add(this.exit_btn);
             this.Controls.Add(this.add_ride_btn);
@@ -317,6 +373,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "home_share_ride";
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).EndInit();
+            this.paid_ride_group_btns.ResumeLayout(false);
+            this.paid_ride_group_btns.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,5 +397,8 @@
         private System.Windows.Forms.RadioButton yes_radio_btn;
         private System.Windows.Forms.RadioButton no_radio_btn;
         private System.Windows.Forms.LinkLabel clear_all_lbl;
+        private Guna.UI2.WinForms.Guna2GroupBox paid_ride_group_btns;
+        private Guna.UI2.WinForms.Guna2TextBox no_of_seats_txtbox;
+        private System.Windows.Forms.Label no_of_seats;
     }
 }

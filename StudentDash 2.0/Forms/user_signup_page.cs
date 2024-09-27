@@ -72,19 +72,27 @@ namespace StudentDash_2._0
             u.Confirm_password = confirm_password_txtbox.Text;
             u.Vehicle_Number = vehicle_number_txtbox.Text;
 
-            bool success = u.Insert(u);
-            if (success == true)
+            if (u.Name == "" || u.StudentID == "" || u.Password == "" || u.Confirm_password == "")
             {
-                MessageBox.Show($"{u.Name} as an user added successfully.");
-                clear();
+                MessageBox.Show("Please fill all mandatory fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("User adding failed. Please try again");
+                bool success = u.Insert(u);
+                if (success == true)
+                {
+                    MessageBox.Show($"{u.Name} as an user added successfully.");
+                    clear();
+                }
+                else
+                {
+                    MessageBox.Show("User adding failed. Please try again");
+                }
             }
             //load data in Data grid view
             DataTable dataTable = u.Select();
             dataGridView1.DataSource = dataTable;
+            dataGridView1.Visible = true;
         }
     }
 }

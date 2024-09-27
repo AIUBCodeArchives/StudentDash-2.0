@@ -44,14 +44,14 @@
             this.change_password_lbl = new System.Windows.Forms.Label();
             this.update_vehicle_number_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.number_update_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.new_number_txtbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.new_number_lbl = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.old_number_txtbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.old_number_lbl = new System.Windows.Forms.Label();
             this.update_vehicle_number_lbl = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.student_id_lbl = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.exit_btn = new System.Windows.Forms.PictureBox();
             this.guna2Panel1.SuspendLayout();
             this.change_password_panel.SuspendLayout();
@@ -180,6 +180,7 @@
             this.change_password_btn.Size = new System.Drawing.Size(222, 48);
             this.change_password_btn.TabIndex = 20;
             this.change_password_btn.Text = "Change Password";
+            this.change_password_btn.Click += new System.EventHandler(this.change_password_btn_Click);
             this.change_password_btn.MouseLeave += new System.EventHandler(this.change_password_btn_MouseLeave);
             this.change_password_btn.MouseHover += new System.EventHandler(this.change_password_btn_MouseHover);
             // 
@@ -272,9 +273,9 @@
             this.update_vehicle_number_panel.BackColor = System.Drawing.Color.Transparent;
             this.update_vehicle_number_panel.BorderRadius = 30;
             this.update_vehicle_number_panel.Controls.Add(this.number_update_btn);
-            this.update_vehicle_number_panel.Controls.Add(this.guna2TextBox1);
+            this.update_vehicle_number_panel.Controls.Add(this.new_number_txtbox);
             this.update_vehicle_number_panel.Controls.Add(this.new_number_lbl);
-            this.update_vehicle_number_panel.Controls.Add(this.guna2TextBox2);
+            this.update_vehicle_number_panel.Controls.Add(this.old_number_txtbox);
             this.update_vehicle_number_panel.Controls.Add(this.old_number_lbl);
             this.update_vehicle_number_panel.Controls.Add(this.update_vehicle_number_lbl);
             this.update_vehicle_number_panel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(121)))), ((int)(((byte)(139)))));
@@ -299,32 +300,33 @@
             this.number_update_btn.Size = new System.Drawing.Size(222, 48);
             this.number_update_btn.TabIndex = 26;
             this.number_update_btn.Text = "Update Number";
+            this.number_update_btn.Click += new System.EventHandler(this.number_update_btn_Click);
             this.number_update_btn.MouseLeave += new System.EventHandler(this.number_update_btn_MouseLeave);
             this.number_update_btn.MouseHover += new System.EventHandler(this.number_update_btn_MouseHover);
             // 
-            // guna2TextBox1
+            // new_number_txtbox
             // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderRadius = 18;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(55, 172);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox1.PlaceholderText = "Enter your new password";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(416, 47);
-            this.guna2TextBox1.TabIndex = 25;
+            this.new_number_txtbox.BackColor = System.Drawing.Color.Transparent;
+            this.new_number_txtbox.BorderRadius = 18;
+            this.new_number_txtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.new_number_txtbox.DefaultText = "";
+            this.new_number_txtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.new_number_txtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.new_number_txtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.new_number_txtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.new_number_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.new_number_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.new_number_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.new_number_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.new_number_txtbox.Location = new System.Drawing.Point(55, 172);
+            this.new_number_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.new_number_txtbox.Name = "new_number_txtbox";
+            this.new_number_txtbox.PasswordChar = '\0';
+            this.new_number_txtbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.new_number_txtbox.PlaceholderText = "Enter your new password";
+            this.new_number_txtbox.SelectedText = "";
+            this.new_number_txtbox.Size = new System.Drawing.Size(416, 47);
+            this.new_number_txtbox.TabIndex = 25;
             // 
             // new_number_lbl
             // 
@@ -338,29 +340,29 @@
             this.new_number_lbl.TabIndex = 24;
             this.new_number_lbl.Text = "New Number:";
             // 
-            // guna2TextBox2
+            // old_number_txtbox
             // 
-            this.guna2TextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.BorderRadius = 18;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(55, 90);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.PlaceholderText = "Enter your old password";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(416, 47);
-            this.guna2TextBox2.TabIndex = 23;
+            this.old_number_txtbox.BackColor = System.Drawing.Color.Transparent;
+            this.old_number_txtbox.BorderRadius = 18;
+            this.old_number_txtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.old_number_txtbox.DefaultText = "";
+            this.old_number_txtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.old_number_txtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.old_number_txtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.old_number_txtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.old_number_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.old_number_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.old_number_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.old_number_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.old_number_txtbox.Location = new System.Drawing.Point(55, 90);
+            this.old_number_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.old_number_txtbox.Name = "old_number_txtbox";
+            this.old_number_txtbox.PasswordChar = '\0';
+            this.old_number_txtbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.old_number_txtbox.PlaceholderText = "Enter your old password";
+            this.old_number_txtbox.SelectedText = "";
+            this.old_number_txtbox.Size = new System.Drawing.Size(416, 47);
+            this.old_number_txtbox.TabIndex = 23;
             // 
             // old_number_lbl
             // 
@@ -398,16 +400,6 @@
             this.guna2Panel2.Size = new System.Drawing.Size(339, 304);
             this.guna2Panel2.TabIndex = 13;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::StudentDash_2._0.Properties.Resources.icons8_user_100;
-            this.pictureBox1.Location = new System.Drawing.Point(96, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 144);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // student_id_lbl
             // 
             this.student_id_lbl.AutoSize = true;
@@ -419,6 +411,16 @@
             this.student_id_lbl.Size = new System.Drawing.Size(237, 48);
             this.student_id_lbl.TabIndex = 17;
             this.student_id_lbl.Text = "STUDENT ID";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::StudentDash_2._0.Properties.Resources.icons8_user_100;
+            this.pictureBox1.Location = new System.Drawing.Point(96, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 144);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // exit_btn
             // 
@@ -484,9 +486,9 @@
         private System.Windows.Forms.Label new_password_lbl;
         private Guna.UI2.WinForms.Guna2Button change_password_btn;
         private Guna.UI2.WinForms.Guna2Button number_update_btn;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox new_number_txtbox;
         private System.Windows.Forms.Label new_number_lbl;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox old_number_txtbox;
         private System.Windows.Forms.Label old_number_lbl;
         private System.Windows.Forms.Label update_vehicle_number_lbl;
         private System.Windows.Forms.PictureBox pictureBox1;
