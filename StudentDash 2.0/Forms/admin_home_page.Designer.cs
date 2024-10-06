@@ -35,31 +35,29 @@
             this.admin_home_lbl = new System.Windows.Forms.Label();
             this.admin_id_lbl = new System.Windows.Forms.Label();
             this.admin_name_lbl = new System.Windows.Forms.Label();
-            this.total_user_panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.user_count_lbl = new System.Windows.Forms.Label();
-            this.total_user_lbl = new System.Windows.Forms.Label();
             this.search_btn = new Guna.UI2.WinForms.Guna2Button();
             this.search_student_txtbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.search_student_id_lbl = new System.Windows.Forms.Label();
             this.block_btn = new Guna.UI2.WinForms.Guna2Button();
             this.block_user_lbl = new System.Windows.Forms.Label();
             this.info_panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.shared_count_lbl = new System.Windows.Forms.Label();
-            this.booked_count_lbl = new System.Windows.Forms.Label();
-            this.ride_shared_lbl = new System.Windows.Forms.Label();
-            this.ride_booked_lbl = new System.Windows.Forms.Label();
+            this.description_lbl = new System.Windows.Forms.Label();
+            this.ride_description_lbl = new System.Windows.Forms.Label();
             this.username_lbl = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.vehicle_number_value_lbl = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.report_count_lbl = new System.Windows.Forms.Label();
             this.vehicle_number_lbl = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.admin_logo)).BeginInit();
-            this.total_user_panel.SuspendLayout();
             this.info_panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // exit_btn
@@ -92,9 +90,9 @@
             // 
             this.admin_logo.BackColor = System.Drawing.Color.Transparent;
             this.admin_logo.Image = global::StudentDash_2._0.Properties.Resources.icon_5359553_640;
-            this.admin_logo.Location = new System.Drawing.Point(125, 228);
+            this.admin_logo.Location = new System.Drawing.Point(114, 177);
             this.admin_logo.Name = "admin_logo";
-            this.admin_logo.Size = new System.Drawing.Size(170, 170);
+            this.admin_logo.Size = new System.Drawing.Size(181, 221);
             this.admin_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.admin_logo.TabIndex = 10;
             this.admin_logo.TabStop = false;
@@ -138,7 +136,7 @@
             this.admin_id_lbl.BackColor = System.Drawing.Color.Transparent;
             this.admin_id_lbl.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.admin_id_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
-            this.admin_id_lbl.Location = new System.Drawing.Point(117, 401);
+            this.admin_id_lbl.Location = new System.Drawing.Point(95, 401);
             this.admin_id_lbl.Name = "admin_id_lbl";
             this.admin_id_lbl.Size = new System.Drawing.Size(176, 44);
             this.admin_id_lbl.TabIndex = 29;
@@ -148,49 +146,13 @@
             // 
             this.admin_name_lbl.AutoSize = true;
             this.admin_name_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.admin_name_lbl.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin_name_lbl.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.admin_name_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
-            this.admin_name_lbl.Location = new System.Drawing.Point(84, 476);
+            this.admin_name_lbl.Location = new System.Drawing.Point(92, 477);
             this.admin_name_lbl.Name = "admin_name_lbl";
-            this.admin_name_lbl.Size = new System.Drawing.Size(237, 44);
+            this.admin_name_lbl.Size = new System.Drawing.Size(203, 37);
             this.admin_name_lbl.TabIndex = 30;
             this.admin_name_lbl.Text = "Admin Name";
-            // 
-            // total_user_panel
-            // 
-            this.total_user_panel.BackColor = System.Drawing.Color.Transparent;
-            this.total_user_panel.BorderRadius = 30;
-            this.total_user_panel.Controls.Add(this.user_count_lbl);
-            this.total_user_panel.Controls.Add(this.total_user_lbl);
-            this.total_user_panel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(121)))), ((int)(((byte)(139)))));
-            this.total_user_panel.Location = new System.Drawing.Point(389, 130);
-            this.total_user_panel.Name = "total_user_panel";
-            this.total_user_panel.Size = new System.Drawing.Size(313, 163);
-            this.total_user_panel.TabIndex = 31;
-            // 
-            // user_count_lbl
-            // 
-            this.user_count_lbl.AutoSize = true;
-            this.user_count_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.user_count_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_count_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(89)))));
-            this.user_count_lbl.Location = new System.Drawing.Point(121, 78);
-            this.user_count_lbl.Name = "user_count_lbl";
-            this.user_count_lbl.Size = new System.Drawing.Size(62, 48);
-            this.user_count_lbl.TabIndex = 33;
-            this.user_count_lbl.Text = "15";
-            // 
-            // total_user_lbl
-            // 
-            this.total_user_lbl.AutoSize = true;
-            this.total_user_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.total_user_lbl.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.total_user_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
-            this.total_user_lbl.Location = new System.Drawing.Point(27, 12);
-            this.total_user_lbl.Name = "total_user_lbl";
-            this.total_user_lbl.Size = new System.Drawing.Size(199, 44);
-            this.total_user_lbl.TabIndex = 32;
-            this.total_user_lbl.Text = "Total User:";
             // 
             // search_btn
             // 
@@ -204,11 +166,12 @@
             this.search_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
             this.search_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_btn.ForeColor = System.Drawing.Color.White;
-            this.search_btn.Location = new System.Drawing.Point(903, 385);
+            this.search_btn.Location = new System.Drawing.Point(902, 445);
             this.search_btn.Name = "search_btn";
             this.search_btn.Size = new System.Drawing.Size(154, 48);
             this.search_btn.TabIndex = 23;
             this.search_btn.Text = "Search";
+            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
             this.search_btn.MouseLeave += new System.EventHandler(this.search_btn_MouseLeave);
             this.search_btn.MouseHover += new System.EventHandler(this.search_btn_MouseHover);
             // 
@@ -226,7 +189,7 @@
             this.search_student_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.search_student_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.search_student_txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search_student_txtbox.Location = new System.Drawing.Point(389, 386);
+            this.search_student_txtbox.Location = new System.Drawing.Point(388, 446);
             this.search_student_txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.search_student_txtbox.Name = "search_student_txtbox";
             this.search_student_txtbox.PasswordChar = '\0';
@@ -242,7 +205,7 @@
             this.search_student_id_lbl.BackColor = System.Drawing.Color.Transparent;
             this.search_student_id_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_student_id_lbl.ForeColor = System.Drawing.Color.Black;
-            this.search_student_id_lbl.Location = new System.Drawing.Point(402, 358);
+            this.search_student_id_lbl.Location = new System.Drawing.Point(401, 418);
             this.search_student_id_lbl.Name = "search_student_id_lbl";
             this.search_student_id_lbl.Size = new System.Drawing.Size(172, 25);
             this.search_student_id_lbl.TabIndex = 21;
@@ -260,11 +223,12 @@
             this.block_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
             this.block_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.block_btn.ForeColor = System.Drawing.Color.White;
-            this.block_btn.Location = new System.Drawing.Point(1077, 386);
+            this.block_btn.Location = new System.Drawing.Point(1076, 446);
             this.block_btn.Name = "block_btn";
             this.block_btn.Size = new System.Drawing.Size(154, 48);
             this.block_btn.TabIndex = 32;
             this.block_btn.Text = "Block";
+            this.block_btn.Click += new System.EventHandler(this.block_btn_Click);
             this.block_btn.MouseLeave += new System.EventHandler(this.block_btn_MouseLeave);
             this.block_btn.MouseHover += new System.EventHandler(this.block_btn_MouseHover);
             // 
@@ -272,11 +236,11 @@
             // 
             this.block_user_lbl.AutoSize = true;
             this.block_user_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.block_user_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.block_user_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.block_user_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
-            this.block_user_lbl.Location = new System.Drawing.Point(698, 303);
+            this.block_user_lbl.Location = new System.Drawing.Point(691, 394);
             this.block_user_lbl.Name = "block_user_lbl";
-            this.block_user_lbl.Size = new System.Drawing.Size(258, 60);
+            this.block_user_lbl.Size = new System.Drawing.Size(205, 48);
             this.block_user_lbl.TabIndex = 33;
             this.block_user_lbl.Text = "Block User";
             // 
@@ -284,64 +248,37 @@
             // 
             this.info_panel1.BackColor = System.Drawing.Color.Transparent;
             this.info_panel1.BorderRadius = 30;
-            this.info_panel1.Controls.Add(this.shared_count_lbl);
-            this.info_panel1.Controls.Add(this.booked_count_lbl);
-            this.info_panel1.Controls.Add(this.ride_shared_lbl);
-            this.info_panel1.Controls.Add(this.ride_booked_lbl);
+            this.info_panel1.Controls.Add(this.description_lbl);
+            this.info_panel1.Controls.Add(this.ride_description_lbl);
             this.info_panel1.Controls.Add(this.username_lbl);
             this.info_panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(121)))), ((int)(((byte)(139)))));
-            this.info_panel1.Location = new System.Drawing.Point(389, 455);
+            this.info_panel1.Location = new System.Drawing.Point(388, 515);
             this.info_panel1.Name = "info_panel1";
             this.info_panel1.Size = new System.Drawing.Size(385, 262);
             this.info_panel1.TabIndex = 34;
             // 
-            // shared_count_lbl
+            // description_lbl
             // 
-            this.shared_count_lbl.AutoSize = true;
-            this.shared_count_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.shared_count_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shared_count_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(89)))));
-            this.shared_count_lbl.Location = new System.Drawing.Point(164, 211);
-            this.shared_count_lbl.Name = "shared_count_lbl";
-            this.shared_count_lbl.Size = new System.Drawing.Size(62, 48);
-            this.shared_count_lbl.TabIndex = 19;
-            this.shared_count_lbl.Text = "15";
+            this.description_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.description_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.description_lbl.ForeColor = System.Drawing.Color.White;
+            this.description_lbl.Location = new System.Drawing.Point(13, 115);
+            this.description_lbl.Name = "description_lbl";
+            this.description_lbl.Size = new System.Drawing.Size(341, 120);
+            this.description_lbl.TabIndex = 18;
+            this.description_lbl.Text = "description";
             // 
-            // booked_count_lbl
+            // ride_description_lbl
             // 
-            this.booked_count_lbl.AutoSize = true;
-            this.booked_count_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.booked_count_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.booked_count_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(89)))));
-            this.booked_count_lbl.Location = new System.Drawing.Point(164, 115);
-            this.booked_count_lbl.Name = "booked_count_lbl";
-            this.booked_count_lbl.Size = new System.Drawing.Size(62, 48);
-            this.booked_count_lbl.TabIndex = 18;
-            this.booked_count_lbl.Text = "15";
-            // 
-            // ride_shared_lbl
-            // 
-            this.ride_shared_lbl.AutoSize = true;
-            this.ride_shared_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.ride_shared_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ride_shared_lbl.ForeColor = System.Drawing.Color.White;
-            this.ride_shared_lbl.Location = new System.Drawing.Point(19, 163);
-            this.ride_shared_lbl.Name = "ride_shared_lbl";
-            this.ride_shared_lbl.Size = new System.Drawing.Size(255, 48);
-            this.ride_shared_lbl.TabIndex = 17;
-            this.ride_shared_lbl.Text = "Rides Shared:";
-            // 
-            // ride_booked_lbl
-            // 
-            this.ride_booked_lbl.AutoSize = true;
-            this.ride_booked_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.ride_booked_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ride_booked_lbl.ForeColor = System.Drawing.Color.White;
-            this.ride_booked_lbl.Location = new System.Drawing.Point(19, 67);
-            this.ride_booked_lbl.Name = "ride_booked_lbl";
-            this.ride_booked_lbl.Size = new System.Drawing.Size(268, 48);
-            this.ride_booked_lbl.TabIndex = 16;
-            this.ride_booked_lbl.Text = "Rides Booked:";
+            this.ride_description_lbl.AutoSize = true;
+            this.ride_description_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.ride_description_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ride_description_lbl.ForeColor = System.Drawing.Color.White;
+            this.ride_description_lbl.Location = new System.Drawing.Point(3, 67);
+            this.ride_description_lbl.Name = "ride_description_lbl";
+            this.ride_description_lbl.Size = new System.Drawing.Size(359, 48);
+            this.ride_description_lbl.TabIndex = 16;
+            this.ride_description_lbl.Text = "Report Description:";
             // 
             // username_lbl
             // 
@@ -349,22 +286,20 @@
             this.username_lbl.BackColor = System.Drawing.Color.Transparent;
             this.username_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
-            this.username_lbl.Location = new System.Drawing.Point(39, 7);
+            this.username_lbl.Location = new System.Drawing.Point(1, 7);
             this.username_lbl.Name = "username_lbl";
-            this.username_lbl.Size = new System.Drawing.Size(307, 60);
+            this.username_lbl.Size = new System.Drawing.Size(282, 60);
             this.username_lbl.TabIndex = 15;
-            this.username_lbl.Text = "Hi Username";
+            this.username_lbl.Text = "ID: Number";
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderRadius = 30;
             this.guna2Panel1.Controls.Add(this.vehicle_number_value_lbl);
-            this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.report_count_lbl);
             this.guna2Panel1.Controls.Add(this.vehicle_number_lbl);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(121)))), ((int)(((byte)(139)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(809, 455);
+            this.guna2Panel1.Location = new System.Drawing.Point(808, 515);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(422, 262);
             this.guna2Panel1.TabIndex = 35;
@@ -375,35 +310,11 @@
             this.vehicle_number_value_lbl.BackColor = System.Drawing.Color.Transparent;
             this.vehicle_number_value_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vehicle_number_value_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(89)))));
-            this.vehicle_number_value_lbl.Location = new System.Drawing.Point(59, 67);
+            this.vehicle_number_value_lbl.Location = new System.Drawing.Point(27, 135);
             this.vehicle_number_value_lbl.Name = "vehicle_number_value_lbl";
             this.vehicle_number_value_lbl.Size = new System.Drawing.Size(288, 48);
             this.vehicle_number_value_lbl.TabIndex = 38;
             this.vehicle_number_value_lbl.Text = "vehicle number";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(89)))));
-            this.label1.Location = new System.Drawing.Point(294, 163);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 48);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "3";
-            // 
-            // report_count_lbl
-            // 
-            this.report_count_lbl.AutoSize = true;
-            this.report_count_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.report_count_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.report_count_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
-            this.report_count_lbl.Location = new System.Drawing.Point(25, 163);
-            this.report_count_lbl.Name = "report_count_lbl";
-            this.report_count_lbl.Size = new System.Drawing.Size(263, 48);
-            this.report_count_lbl.TabIndex = 37;
-            this.report_count_lbl.Text = "Report Count:";
             // 
             // vehicle_number_lbl
             // 
@@ -411,26 +322,73 @@
             this.vehicle_number_lbl.BackColor = System.Drawing.Color.Transparent;
             this.vehicle_number_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vehicle_number_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(228)))), ((int)(((byte)(213)))));
-            this.vehicle_number_lbl.Location = new System.Drawing.Point(23, 7);
+            this.vehicle_number_lbl.Location = new System.Drawing.Point(25, 30);
             this.vehicle_number_lbl.Name = "vehicle_number_lbl";
             this.vehicle_number_lbl.Size = new System.Drawing.Size(377, 60);
             this.vehicle_number_lbl.TabIndex = 15;
             this.vehicle_number_lbl.Text = "Vehicle Number";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(388, 175);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(385, 204);
+            this.dataGridView1.TabIndex = 34;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            this.label2.Location = new System.Drawing.Point(380, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(143, 44);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Reports";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(808, 175);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(422, 204);
+            this.dataGridView2.TabIndex = 37;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            this.label3.Location = new System.Drawing.Point(800, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(227, 44);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Active Riders";
+            // 
             // admin_home_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::StudentDash_2._0.Properties.Resources.Student_Dash_2_O_6_;
+            this.BackgroundImage = global::StudentDash_2._0.Properties.Resources.Student_Dash_2_O_9_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1300, 800);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.info_panel1);
             this.Controls.Add(this.block_user_lbl);
             this.Controls.Add(this.block_btn);
             this.Controls.Add(this.search_btn);
             this.Controls.Add(this.search_student_txtbox);
-            this.Controls.Add(this.total_user_panel);
             this.Controls.Add(this.search_student_id_lbl);
             this.Controls.Add(this.admin_name_lbl);
             this.Controls.Add(this.admin_id_lbl);
@@ -444,15 +402,16 @@
             this.Name = "admin_home_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin_home_page";
+            this.Load += new System.EventHandler(this.admin_home_page_Load);
             ((System.ComponentModel.ISupportInitialize)(this.exit_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.admin_logo)).EndInit();
-            this.total_user_panel.ResumeLayout(false);
-            this.total_user_panel.PerformLayout();
             this.info_panel1.ResumeLayout(false);
             this.info_panel1.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,24 +426,21 @@
         private System.Windows.Forms.Label admin_home_lbl;
         private System.Windows.Forms.Label admin_id_lbl;
         private System.Windows.Forms.Label admin_name_lbl;
-        private Guna.UI2.WinForms.Guna2Panel total_user_panel;
-        private System.Windows.Forms.Label total_user_lbl;
         private Guna.UI2.WinForms.Guna2Button search_btn;
         private Guna.UI2.WinForms.Guna2TextBox search_student_txtbox;
         private System.Windows.Forms.Label search_student_id_lbl;
-        private System.Windows.Forms.Label user_count_lbl;
         private Guna.UI2.WinForms.Guna2Button block_btn;
         private System.Windows.Forms.Label block_user_lbl;
         private Guna.UI2.WinForms.Guna2Panel info_panel1;
-        private System.Windows.Forms.Label shared_count_lbl;
-        private System.Windows.Forms.Label booked_count_lbl;
-        private System.Windows.Forms.Label ride_shared_lbl;
-        private System.Windows.Forms.Label ride_booked_lbl;
+        private System.Windows.Forms.Label ride_description_lbl;
         private System.Windows.Forms.Label username_lbl;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label vehicle_number_lbl;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label report_count_lbl;
         private System.Windows.Forms.Label vehicle_number_value_lbl;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label description_lbl;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label3;
     }
 }

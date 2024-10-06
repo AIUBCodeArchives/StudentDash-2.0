@@ -93,6 +93,16 @@ namespace StudentDash_2._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _458189964_2039492059803419_5798020217839565781_n {
+            get {
+                object obj = ResourceManager.GetObject("458189964_2039492059803419_5798020217839565781_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5 {
             get {
                 object obj = ResourceManager.GetObject("5", resourceCulture);
@@ -183,6 +193,16 @@ namespace StudentDash_2._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap received_1072331164069265_jpeg_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("received_1072331164069265.jpeg-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2024_09_26_211720_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2024-09-26_211720-removebg-preview", resourceCulture);
@@ -206,6 +226,26 @@ namespace StudentDash_2._0.Properties {
         internal static System.Drawing.Bitmap Screenshot_2024_09_26_232421_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2024-09-26_232421-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_09_28_151811 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-09-28 151811", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_09_28_151913 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-09-28 151913", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +313,39 @@ namespace StudentDash_2._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Student_Dash_2_O_8_ {
+            get {
+                object obj = ResourceManager.GetObject("Student Dash 2.O(8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Student_Dash_2_O_9_ {
+            get {
+                object obj = ResourceManager.GetObject("Student Dash 2.O(9)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Student_Dcash_2_O_4_ {
             get {
                 object obj = ResourceManager.GetObject("Student Dcash 2.O(4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_09_01_at_11_46_25_a1b9a998 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-09-01 at 11.46.25_a1b9a998", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -67,10 +67,23 @@ namespace StudentDash_2._0.Forms
                     studentID = student_id_txtbox.Text;
                     password = password_txtbox.Text;
 
-                    //form to load 
-                    user_home_page uhp = new user_home_page(studentID, password);
-                    uhp.Show();
-                    this.Visible = false;
+                    if (studentID == "" || password == "")
+                    {
+                        MessageBox.Show("StudentID or Password field can not be empty. \nplease try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        student_id_txtbox.Clear();
+                        password_txtbox.Clear();
+
+                        //focus
+                        student_id_txtbox.Focus();
+                    }
+                    else
+                    {
+                        //form to load 
+                        user_home_page uhp = new user_home_page(studentID, password);
+                        uhp.Show();
+                        this.Visible = false;
+                    }
+                    
                 }
                 else
                 {

@@ -452,6 +452,7 @@
             this.Name = "profile_panel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "home_dashboard_page";
+            this.Load += new System.EventHandler(this.profile_panel_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.change_password_panel.ResumeLayout(false);

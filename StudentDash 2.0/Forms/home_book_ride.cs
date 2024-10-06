@@ -100,5 +100,10 @@ namespace StudentDash_2._0.Forms
                 conn.Close();
             }
         }
+
+        private void book_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

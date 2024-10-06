@@ -52,6 +52,7 @@ namespace StudentDash_2._0.Forms
             {
                 conn.Close();
             }
+            
             username_lbl.Text = $"Hi, {username.ToUpper()}";
             student_id_lbl.Text = studentID;
 
@@ -119,6 +120,43 @@ namespace StudentDash_2._0.Forms
             {
                 conn.Close();
             }
+        }
+
+        string name;
+        private void profile_panel_Load(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                
+                string query = $"SELECT Name FROM Users WHERE studentID = @studentID";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                SqlCommand command = new SqlCommand(query, conn);
+                command.Parameters.AddWithValue("@studentID", studentID);
+                conn.Open();
+                object result = command.ExecuteScalar();
+                if (result != null)
+                {
+                    // Process the result, convert to string
+                    name = result.ToString();
+                }
+                else
+                {
+                    // Handle case where no result is returned, e.g., name not found
+                    name = "Unknown";
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            username_lbl.Text = $"Hi, {name.ToUpper()}";
+            student_id_lbl.Text = studentID;
+
         }
 
         private void number_update_btn_Click(object sender, EventArgs e)

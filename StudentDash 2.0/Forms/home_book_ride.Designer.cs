@@ -145,6 +145,7 @@
             this.book_btn.Size = new System.Drawing.Size(125, 53);
             this.book_btn.TabIndex = 27;
             this.book_btn.Text = "Book";
+            this.book_btn.Click += new System.EventHandler(this.book_btn_Click);
             this.book_btn.MouseLeave += new System.EventHandler(this.book_btn_MouseLeave);
             this.book_btn.MouseHover += new System.EventHandler(this.book_btn_MouseHover);
             // 

@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Db\Reports.cs" />
     <Compile Include="Db\riders.cs" />
     <Compile Include="Db\users.cs" />
     <Compile Include="Forms\admin_home_page.cs">
@@ -244,6 +245,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-eye-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\received_1072331164069265.jpeg-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\458189964_2039492059803419_5798020217839565781_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-09-01 at 11.46.25_a1b9a998.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-09-28 151811.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-09-28 151913.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Dash 2.O%288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Dash 2.O%289%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

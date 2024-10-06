@@ -19,7 +19,7 @@ namespace StudentDash_2._0.Forms
             InitializeComponent();
         }
 
-        string studentID, password, vehicle_number;
+        string name, studentID, password, vehicle_number;
         static string myconnstring = "Data Source=RAIYEN-ZAYED-RA\\SQLEXPRESS;Initial Catalog=StudentDash;Integrated Security=True;TrustServerCertificate=True";
         SqlConnection conn = new SqlConnection(myconnstring);
 
@@ -41,6 +41,29 @@ namespace StudentDash_2._0.Forms
                 {
                     // Process the result, e.g., convert to string
                     vehicle_number = result.ToString();
+                    // Now you have cellData and can use it as needed
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            try
+            {
+                string query = $"SELECT Name FROM Users WHERE studentID = @studentID";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                SqlCommand command = new SqlCommand(query, conn);
+                command.Parameters.AddWithValue("@studentID", studentID);
+                conn.Open();
+                object result = command.ExecuteScalar();
+                if (result != null)
+                {
+                    // Process the result, e.g., convert to string
+                    name = result.ToString();
                     // Now you have cellData and can use it as needed
                 }
             }
@@ -76,7 +99,7 @@ namespace StudentDash_2._0.Forms
         
         private void dashboard_btn_Click(object sender, EventArgs e)
         {
-            load_form(new profile_panel());
+            load_form(new profile_panel(studentID, password, vehicle_number));
             dashboard_btn.FillColor = Color.FromArgb(155, 190, 200);
             book_ride_btn.FillColor = Color.FromArgb(94, 124, 137);
             share_ride_btn.FillColor = Color.FromArgb(94, 124, 137);
